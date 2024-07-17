@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --primary: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400, 600, 700;
+}
+body {
+    background-color: var(--off-black);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: var(--dark-grey);
+    width: 20vw;    
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 2rem;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container .profile-container img {
+    width: 80px;
+    border-radius: 50%;
+}
+.container .profile-name {
+    font-weight: 700;
+    font-size: 18px;
+}
+.container .profile-locn {
+    color: var(--primary);
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.container .profile-skill {
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+.container .profile-social a {
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--grey);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    font-size: 12px;
+    font-weight: 600;
+}
+.container .profile-social a:hover {
+    background-color: var(--primary);
+    color: var(--dark-grey);
+    font-size: 12px;
+    font-weight: 600;
+}
